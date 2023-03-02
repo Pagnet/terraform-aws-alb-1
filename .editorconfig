@@ -1,30 +1,80 @@
-# EditorConfig is awesome: http://EditorConfig.org
-# Uses editorconfig to maintain consistent coding styles
-
 # top-most EditorConfig file
 root = true
 
 # Unix-style newlines with a newline ending every file
 [*]
+indent_style = space
+indent_size = 2
 charset = utf-8
 end_of_line = lf
-indent_size = 2
-indent_style = space
-insert_final_newline = true
-max_line_length = 80
 trim_trailing_whitespace = true
+insert_final_newline = true
 
-[*.{tf,tfvars}]
-indent_size = 2
+# Backend Languages (Python, Go, Ruby etc)
+
+# Python
+[{*.py,python.snippets}]
 indent_style = space
+indent_size = 4
 
-[*.md]
-max_line_length = 0
-trim_trailing_whitespace = false
+# Ruby
+[{*.rb,Vagrantfile}]
+indent_style = space
+indent_size = 2
 
-[Makefile]
-tab_width = 2
+# Go
+[*.go]
 indent_style = tab
 
-[COMMIT_EDITMSG]
-max_line_length = 0
+# Front End Languages (HTML, JS, CSS etc)
+
+[*.{js,css,html}]
+indent_style = space
+indent_size = 2
+
+# Misc
+
+# YAML Style
+[*.{yml,yaml,sls,jinja}]
+indent_style = space
+indent_size = 2
+
+# Protobuf
+[*.proto]
+indent_style = space
+indent_size = 2
+
+# TOML
+[*.toml]
+indent_style = space
+indent_size = 2
+
+# JSON
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Bash scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+
+# SQL
+[*.sql]
+indent_style = space
+indent_size = 2
+
+# Vim
+[*.vim]
+indent_style = space
+indent_size = 2
+
+# Terraform
+[*.{tf,tfstate,tfvars}]
+indent_style = space
+indent_size = 2
+
+# Lua
+[*.lua]
+indent_style = space
+indent_size = 2
